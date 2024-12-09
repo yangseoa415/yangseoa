@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio_profile</title>
+    <style>
+        *{margin: 0;
+         padding: 0;
+         box-sizing: border-box;}
+         #wrap{width: 100%;
+               height: 100vh;
+               position: relative;
+               overflow: hidden;
+               background-color: black;
+               color: white;}
+        ul{list-style: none;}
+        a{text-decoration: none;
+          color: inherit;}
+        #wrap img{width: 100%;}
+        ul{display: flex;
+                 width: 300px;
+                height: 30px;
+                position: absolute;
+                top: 25px;
+                left: 1200px;
+               }
+        ul li{width: 50%;}
+        ul li a{display: block; 
+            font-size: 24px;                          
+            font-family:  Helvetica;
+            text-align: center;
+              color: white;
+            }
+            ul li a:hover{font-size: 28px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <img src="./프로필.jpg" alt="프로필">
+    </div>
+    <div class="text">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../portfolio/index.html">PORTFOLIO</a></li>
+        </ul> 
+    </div>
+</body>
+</html>

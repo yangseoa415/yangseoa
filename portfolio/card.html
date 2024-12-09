@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_card news</title>
+    <style>
+           * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+     
+      #wrap {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+      
+        color: white;
+        text-align: center;
+        font-family: Helvetica;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      #wrap img {
+        width: 100%;
+      }
+   
+      .text ul {
+        display: flex;
+        width: 300px;
+        height: 30px;
+        position: absolute;
+        top: 25px;
+        left: 1200px;
+      }
+    .text ul li {
+        width: 50%;
+      }
+    .text ul li a {
+        display: block;
+        font-size: 24px;
+        font-family: Helvetica;
+        text-align: center;
+        color: white;
+      }
+    .text ul li a:hover {
+        font-size: 28px;
+      }
+
+      .box{width: 700px;
+           height: 700px;
+           position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -350px;
+          margin-left: -350px;}
+    </style>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+      <script>
+        $(function(){
+            $('.bxslider').bxSlider({
+    auto: true,
+    autoControls: true,
+    stopAutoOnClick: true,
+    pager: true,
+    slideWidth: 700
+  });
+        })
+          
+      </script>
+</head>
+<body>
+    <div id="wrap">
+       <div class="box">
+           <div class="bxslider">
+          <div><img src="./카드뉴스/카드1.jpg" alt="카드1"></div>
+          <div><img src="./카드뉴스/카드2.jpg" alt="카드2"></div>
+          <div><img src="./카드뉴스/카드3.jpg" alt="카드3"></div>
+          <div><img src="./카드뉴스/카드4.jpg" alt="카드4"></div>
+        </div> 
+       </div>
+        <img src="./img/카드뉴스 페이지.jpg" alt="카드뉴스 페이지">
+    </div>
+    <div class="text">
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../profile/pofille.html">PROFILE</a></li>
+        </ul>
+      </div>        
+</body>
+</html>
